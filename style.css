@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    font-size: 14px;
+    color: #222;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    transition: all .2s linear;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ed4e08;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 25px;
+}
+
+/* header */
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .hamburger {
+    display: none;
+    transition: all .3s;
+    margin-right: 10px;
+}
+
+header .hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+header .hamburger.active span:first-child {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .hamburger.active span:last-child {
+    -webkit-transform: rotate(45deg) translate(-4px, -2px);
+    transform: rotate(45deg) translate(-4px, -2px);
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #222;
+    margin: 5px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li a {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header-icons ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons ul li {
+    margin-left: 20px;
+}
+
+.header-icons ul li i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-icons ul .cart {
+    position: relative;
+}
+
+.header-icons ul .cart #count {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    position: absolute;
+    top: -15px;
+    right: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ed4e08;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.header-icons ul .cart input:focus {
+    outline: 0;
+}
+
+/* invitation */
+
+.invite-now {
+    background-image: url(assets/Rectangle2022.png);
+    background-repeat: no-repeat, repeat;
+    padding: 20px 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.invite-now .container {
+    text-align: center;
+}
+
+.invite-now p {
+    color: #fff;
+    margin: 0;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.invite-now .button {
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    border-radius: 50px;
+}
+
+/* breadcrumb */
+
+.products-wrapper {
+    padding: 20px 0 60px;
+}
+
+.products .filterDiv {
+    display: none;
+}
+
+.products .filterDiv.show {
+    display: block;
+}
+
+.bread-crumb ul {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bread-crumb ul li {
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.bread-crumb ul li a {
+    color: #222;
+    margin-right: 5px;
+}
+
+.product-count h1 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.product-count h1 span {
+    color: #878787;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.filters-wrapper {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-by {
+    display: block;
+    color: #878787;
+    padding: 15px 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50px;
+    transition: all .2s linear;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.sort-by #sort {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    width: 200px;
+    top: 100%;
+    right: 0;
+    z-index: 9;
+    padding: 15px;
+}
+
+.sort-by #sort button {
+    background: 0;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+#sort li+li {
+    margin-top: 10px;
+}
+
+.grid {
+    overflow: hidden;
+}
+
+.sort-by #sort button:focus {
+    outline: 0;
+}
+
+.sort-by ul {
+    display: none;
+}
+
+.filters h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 10px 0 0;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.filters ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.filters ul li {
+    margin-right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filters ul li.active button {
+    border-color: #000;
+}
+
+.filters ul li button {
+    display: block;
+    color: #878787;
+    padding: 15px 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50px;
+    transition: all .2s linear;
+    background: #fff;
+}
+
+.filters ul li button:focus {
+    outline: 0;
+}
+
+.filters ul li.active button {
+    color: #000;
+}
+
+.filters ul li:hover button {
+    border-color: #000;
+    color: #000;
+}
+
+.thumbnail {
+    margin-bottom: 50px;
+}
+
+.thumbnail h5 {
+    font-size: 18px;
+}
+
+.thumbnail p {
+    font-size: 15px;
+    color: #878787;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.thumbnail .product-cost {
+    font-weight: 500;
+}
+
+.product-cost .text-strike {
+    font-weight: 300;
+    color: #878787;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.product-cost .off-price {
+    font-weight: 300;
+    margin-left: 5px;
+    color: #ed4e08;
+}
+
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: calc(100% - 30px);
+    height: 0;
+    padding: 15px;
+    transition: .5s ease;
+    opacity: 0;
+    margin-left: 15px;
+}
+
+.thumbnail:hover .hover-text {
+    height: 25%;
+    opacity: 1;
+}
+
+.hover-text button {
+    display: none;
+    width: 100%;
+    border: 1px solid #222;
+    background: 0;
+    padding: 10px;
+    transition: all .2s;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.hover-text button:focus {
+    outline: 0;
+}
+
+.hover-text button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.hover-text .selct ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hover-text .sizes {
+    margin: 10px 0;
+    color: #878787;
+}
+
+.selct li {
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #878787;
+}
+
+.selct li:hover {
+    border-color: #000;
+    color: #000;
+}
+
+.selct li.active {
+    border-color: #000;
+    color: #000;
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header .hamburger {
+        display: block;
+        position: relative;
+        z-index: 101;
+    }
+
+    header .menu {
+        height: 100vh;
+        width: 220px;
+        transform: translate(-300px, 0);
+        transition: all .2s;
+        background: #fff;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 99;
+        flex-direction: column;
+        padding: 100px 20px 40px;
+    }
+
+    header .menu li {
+        margin: 0;
+    }
+
+    header .menu li+li {
+        margin-top: 20px;
+    }
+
+    header .menu.active {
+        transform: translate(0, 0);
+    }
+
+    .filters-wrapper {
+        padding-bottom: 10px;
+    }
+
+    .filters h2 {
+        margin: -20px 10px 0 0;
+    }
+
+    .filters ul {
+        max-width: 68%;
+        overflow-x: auto;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+    .bread-crumb ul {
+        max-width: 100%;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+    }
+
+    .filters ul::-webkit-scrollbar,
+    .bread-crumb ul::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .filters ul::-webkit-scrollbar-thumb,
+    .bread-crumb ul::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .invite-now .button {
+        margin: 10px 0 0 10px;
+    }
+
+    .thumbnail {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon0.png" type="image/x-icon">
+    <title>Shop Trade</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="hamburger" onclick="menuClick(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="">
+                    <img src="./assets/favicon0.png" alt="">
+                </a>
+            </div>
+
+
+            <ul class="menu">
+                <li>
+                    <a href="#">Shop</a>
+                    <i class="fa fa-caret-down"></i>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Our Stores</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="header-icons">
+                <ul>
+                    <li>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </li>
+                    <li class="cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span id="count">0</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="invite-now">
+        <div class="container">
+            <p> Invite Friends To Big Fashion Festival & Get Up To $150 MynCash For Every Person Who Visits </p>
+            <a href="#" class="button"> Invite Now</a>
+        </div>
+    </section>
+
+    <section class="products-wrapper">
+        <div class="container">
+            <div class="bread-crumb">
+                <ul>
+                    <li><a href="">Home</a>/</li>
+                    <li><a href="">Clothing</a>/</li>
+                    <li><a href="">product-type Clothing</a>/</li>
+                    <li><a href="">All product-type Clothing</a></li>
+                </ul>
+            </div>
+
+            <div class="product-count">
+                <h1>All Products <span>(25 Products)</span></h1>
+            </div>
+
+            <div class="filters-wrapper">
+                <div class="filters">
+                    <h2>FILTERS :</h2>
+
+                    <ul id="myBtnContainer">
+                        <li class="active"><button data-filter="*">All Products</button></li>
+                        <li><button data-filter=".Tee">Tee Shirt</button></li>
+                        <li><button data-filter=".Denim">Denim</button></li>
+                        <li><button data-filter=".Sweat">Sweat Shirt</button></li>
+                        <li><button data-filter=".Polo">Polo Tee Shirt</button></li>
+                        <li><button data-filter=".Shirt">Shirt</button></li>
+                    </ul>
+                </div>
+
+                <div class="sort">
+                    <div class="sort-by button-group">
+                        <span>Sort : <span class="sort-value"></span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </span>
+                        <ul id="sort">
+                            <li>
+                                <button class="button" data-id="low">Low to High</button>
+                            </li>      
+                            <li>
+                                <button class="button" data-id="high">High to Low</button>
+                            </li>        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+
+                <div class="row grid">
+
+                    <!-- column 1 -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/1-1.jpg">
+                            </figure>
+                            <h5 class="product-name"> Gap</h5>
+                            <p class="product-type">Men's pull over Sweat</p>
+                            <div class="product-cost">$599
+                                <span class="text-strike">$1200</span>
+                                <span class="off-price">(50% OFF)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Denim show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/1-2.png">
+                            </figure>
+                            <h5 class="product-name"> Puma</h5>
+                            <p class="product-type">Solid Polo Collar Grey T-shirt</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Shirt show grid-item" data-price-item="199">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/1-3.png">
+                            </figure>
+                            <h5 class="product-name"> U.S Polo Assn.</h5>
+                            <p class="product-type">Men Blue Regular Fit Striped Casual S...</p>
+                            <div class="product-cost">$199 <span class="text-strike">$400</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 4 -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Sweat show grid-item" data-price-item="500">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/1-4.png">
+                            </figure>
+                            <h5 class="product-name"> Here &amp; Now</h5>
+                            <p class="product-type">product-type Blue Soild Biker Jacket</p>
+                            <div class="product-cost">$500 <span class="text-strike">$1000</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 5-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Sweat show grid-item" data-price-item="600">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/1-5.png">
+                            </figure>
+                            <h5 class="product-name"> Roadster</h5>
+                            <p class="product-type">Men Red Soild Padded Jacet</p>
+                            <div class="product-cost">$600 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 1-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Shirt show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/2-1.png">
+                            </figure>
+                            <h5 class="product-name"> Roaderster</h5>
+                            <p class="product-type">Men Black &amp; Red Regular Fit Checked..</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Shirt show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/2-2.png">
+                            </figure>
+                            <h5 class="product-name"> WROGN</h5>
+                            <p class="product-type">Men Navy Slim Fit Checked Casu...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Sweat show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/2-3.png">
+                            </figure>
+                            <h5 class="product-name"> Mast &amp; Harbour</h5>
+                            <p class="product-type">Men Brown Cable Knit Sweater</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 4-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/2-4.png">
+                            </figure>
+                            <h5 class="product-name"> Jack &amp; Jones</h5>
+                            <p class="product-type">Green Slim Printed Round Ne..</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 5-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/2-5.png">
+                            </figure>
+                            <h5 class="product-name"> Jack &amp; Jones</h5>
+                            <p class="product-type"> pullover</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 1-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Polo show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/3-1.png">
+                            </figure>
+                            <h5 class="product-name"> U.S.Polo Assn</h5>
+
+                            <p class="product-type">Green &amp; Blue Striped Polo Collar...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Polo show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/3-2.png">
+                            </figure>
+                            <h5 class="product-name"> U.S.Polo Assn</h5>
+                            <p class="product-type">product-type White Checked Polo Collar T-Shirt </p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Shirt show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/3-3.png">
+                            </figure>
+                            <h5 class="product-name"> Roadster</h5>
+                            <p class="product-type">Men Navy Blue &amp; Grey Regular Fit Che..</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 4 -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Shirt show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/3-4.png">
+                            </figure>
+                            <h5 class="product-name"> Jack &amp; Jones</h5>
+                            <p class="product-type">Men Purplr Regular Fit Prnted Casual..</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 5-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Shirt show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/3-5.png">
+                            </figure>
+                            <h5 class="product-name"> Jack &amp; Jones</h5>
+                            <p class="product-type">Men Purplr Regular Fit Prnted Casual..</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 1-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Denim show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/4-1.jpg">
+                            </figure>
+                            <h5 class="product-name"> Mast &amp; Harbor</h5>
+                            <p class="product-type">Men Grey Fit Faded Casual Deni..</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 2 -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Denim show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/4-2.jpg">
+                            </figure>
+                            <h5 class="product-name"> Highlander</h5>
+                            <p class="product-type">Men Blue Slim Fit Solid Casual Denim...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Denim show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/4-3.jpg">
+                            </figure>
+                            <h5 class="product-name"> Roadster</h5>
+                            <p class="product-type">Men Blue Regular Fit Casual Den...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 4-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Sweat show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/4-4.jpg">
+                            </figure>
+                            <h5 class="product-name"> Gap</h5>
+                            <p class="product-type">Men's Grey &amp; Blue Logo Contrast Ragl...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 5-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Sweat show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/4-5.jpg">
+                            </figure>
+                            <h5 class="product-name"> Gap</h5>
+                            <p class="product-type">Men's pullover Sweatershirt</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 1-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/5-1.jpg">
+                            </figure>
+                            <h5 class="product-name"> Tommy Hilifiger</h5>
+                            <p class="product-type">Men Navy Blue Printed Round Neck T...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 2-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/5-2.jpg">
+                            </figure>
+                            <h5 class="product-name"> Here&amp;Now</h5>
+                            <p class="product-type">Men Tea Blue &amp; Black Printed Round N...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column 3-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/5-3.jpg">
+                            </figure>
+                            <h5 class="product-name"> Difference Of Opinion </h5>
+                            <p class="product-type">Men Sea Green Soild Round Neck T-sh...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 4-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/5-4.jpg">
+                            </figure>
+                            <h5 class="product-name">Manica</h5>
+                            <p class="product-type">Men Navy Blue Printed Neck T...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column 5-->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/5-5.jpg">
+                            </figure>
+                            <h5 class="product-name"> HRX By Hirhik Roshan</h5>
+                            <p class="product-type">Men Navy Blue Soild Round Neck T-sh...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/6-1.jpg">
+                            </figure>
+                            <h5 class="product-name"> Mast &amp; Harbour</h5>
+                            <p class="product-type">Men Navy Blue &amp; Pink Printed Henley N...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/6-2.jpg">
+                            </figure>
+                            <h5 class="product-name"> Roadster</h5>
+                            <p class="product-type">Men Navy Blue Printed Round Neck T...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/6-3.jpg">
+                            </figure>
+                            <h5 class="product-name"> Bushirt</h5>
+                            <p class="product-type">Men Navy Blue Solid Round Neck T-Shi...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/6-4.jpg">
+                            </figure>
+                            <h5 class="product-name"> Tommy Hilifiger</h5>
+                            <p class="product-type">Men Navy Blue Printed Round Neack T-S...</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- column -->
+                    <div class="col-xl-2 col-md-4 col-sm-6 col-6 filterDiv Tee show grid-item" data-price-item="599">
+                        <div class="thumbnail">
+                            <figure>
+                                <img src="assets/6-5.jpg">
+                            </figure>
+                            <h5 class="product-name"> H&amp;M</h5>
+                            <p class="product-type">Men Black Solid 3-Pack T-shirt Slim Fit</p>
+                            <div class="product-cost">$599 <span class="text-strike">$1200</span> <span
+                                    class="off-price">(50%
+                                    off)</span></div>
+                            <div class="hover-text">
+                                <div class="selct">
+                                    <b>Select Size</b>
+
+                                    <ul>
+                                        <li>38</li>
+                                        <li>39</li>
+                                        <li>40</li>
+                                        <li>44</li>
+                                        <li>46</li>
+                                    </ul>
+                                </div>
+
+                                <button class="add-cart">ADD TO CART</button>
+
+                                <div class="sizes">
+                                    Sizes : XS, S, M, L, XL, XXL
+                                </div>
+
+                                <div class="product-cost">$599
+                                    <span class="text-strike">$1200</span>
+                                    <span class="off-price">(50% OFF)</span></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/srcript.js">
+    </script>
+</body>
+
+</html>
